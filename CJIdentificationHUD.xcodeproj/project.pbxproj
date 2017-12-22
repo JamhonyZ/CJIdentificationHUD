@@ -15,6 +15,9 @@
 		CD0FEB571FE8A5C800690FAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0FEB561FE8A5C800690FAD /* main.m */; };
 		CD0FEB611FE8A5C800690FAD /* CJIdentificationHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0FEB601FE8A5C800690FAD /* CJIdentificationHUDTests.m */; };
 		CD0FEB6C1FE8A5C800690FAD /* CJIdentificationHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0FEB6B1FE8A5C800690FAD /* CJIdentificationHUDUITests.m */; };
+		CD0FEB7C1FE8A63C00690FAD /* CJAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0FEB7B1FE8A63C00690FAD /* CJAnimationView.m */; };
+		CD0FEB7F1FE8A65700690FAD /* CJIdentificationHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0FEB7E1FE8A65700690FAD /* CJIdentificationHUD.m */; };
+		CD0FEB821FE8B31400690FAD /* CJ_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0FEB811FE8B31400690FAD /* CJ_Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CD0FEB671FE8A5C800690FAD /* CJIdentificationHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJIdentificationHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0FEB6B1FE8A5C800690FAD /* CJIdentificationHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJIdentificationHUDUITests.m; sourceTree = "<group>"; };
 		CD0FEB6D1FE8A5C800690FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0FEB7A1FE8A63C00690FAD /* CJAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJAnimationView.h; sourceTree = "<group>"; };
+		CD0FEB7B1FE8A63C00690FAD /* CJAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJAnimationView.m; sourceTree = "<group>"; };
+		CD0FEB7D1FE8A65700690FAD /* CJIdentificationHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJIdentificationHUD.h; sourceTree = "<group>"; };
+		CD0FEB7E1FE8A65700690FAD /* CJIdentificationHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJIdentificationHUD.m; sourceTree = "<group>"; };
+		CD0FEB801FE8A91F00690FAD /* CJ_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJ_Define.h; sourceTree = "<group>"; };
+		CD0FEB811FE8B31400690FAD /* CJ_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJ_Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,12 @@
 		CD0FEB461FE8A5C800690FAD /* CJIdentificationHUD */ = {
 			isa = PBXGroup;
 			children = (
+				CD0FEB791FE8A62100690FAD /* CJIdentificationHUD */,
 				CD0FEB471FE8A5C800690FAD /* AppDelegate.h */,
 				CD0FEB481FE8A5C800690FAD /* AppDelegate.m */,
 				CD0FEB4A1FE8A5C800690FAD /* ViewController.h */,
 				CD0FEB4B1FE8A5C800690FAD /* ViewController.m */,
+				CD0FEB811FE8B31400690FAD /* CJ_Logo.png */,
 				CD0FEB4D1FE8A5C800690FAD /* Main.storyboard */,
 				CD0FEB501FE8A5C800690FAD /* Assets.xcassets */,
 				CD0FEB521FE8A5C800690FAD /* LaunchScreen.storyboard */,
@@ -130,6 +141,18 @@
 				CD0FEB6D1FE8A5C800690FAD /* Info.plist */,
 			);
 			path = CJIdentificationHUDUITests;
+			sourceTree = "<group>";
+		};
+		CD0FEB791FE8A62100690FAD /* CJIdentificationHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CD0FEB7A1FE8A63C00690FAD /* CJAnimationView.h */,
+				CD0FEB7B1FE8A63C00690FAD /* CJAnimationView.m */,
+				CD0FEB7D1FE8A65700690FAD /* CJIdentificationHUD.h */,
+				CD0FEB7E1FE8A65700690FAD /* CJIdentificationHUD.m */,
+				CD0FEB801FE8A91F00690FAD /* CJ_Define.h */,
+			);
+			path = CJIdentificationHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +264,7 @@
 				CD0FEB541FE8A5C800690FAD /* LaunchScreen.storyboard in Resources */,
 				CD0FEB511FE8A5C800690FAD /* Assets.xcassets in Resources */,
 				CD0FEB4F1FE8A5C800690FAD /* Main.storyboard in Resources */,
+				CD0FEB821FE8B31400690FAD /* CJ_Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0FEB7C1FE8A63C00690FAD /* CJAnimationView.m in Sources */,
 				CD0FEB4C1FE8A5C800690FAD /* ViewController.m in Sources */,
 				CD0FEB571FE8A5C800690FAD /* main.m in Sources */,
 				CD0FEB491FE8A5C800690FAD /* AppDelegate.m in Sources */,
+				CD0FEB7F1FE8A65700690FAD /* CJIdentificationHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
