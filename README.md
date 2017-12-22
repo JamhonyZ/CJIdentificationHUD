@@ -10,6 +10,7 @@
 + (void)showLoadingInView:(UIView *)view backgroundColor:(UIColor *)color;
 
 #pragma mark -- 识别功能
+
 /**
 *  显示所在的view
 *  中心图片名字
